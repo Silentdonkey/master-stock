@@ -1,3 +1,87 @@
-展示前端主页html初始文件，暂时完成以下两部分：
-1.导航栏
-2.轮播图(里面图片需替换)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>掌中股-做股票的掌门人</title>
+    <link rel="shortcut icon" href="../static/images/index/ico.jpg"
+          type="image/jpg">
+    <link rel="stylesheet" href="../static/css/base.css"
+          type="text/css">
+    <link rel="stylesheet" href="../static/css/index2.css"
+          type="text/css">
+    <script src="../static/js/jquery-1.11.3.js"></script>
+    <script src="../static/js/index.js"></script>
+</head>
+<body>
+<!--外部容器-->
+<div id="box">
+    <!--    1.导航栏-->
+    <div id="nav">
+        <!--        左侧Logo链接首页-->
+        <a href="">
+            <img src="../static/images/index/logo.png">
+        </a>
+        <!--        右侧注册、登录...工具栏-->
+        <div class="nav-right">
+            <li><a class="register" href="" target="_blank">注册</a></li>
+            <li><a class="login" href="" target="_blank">登录</a></li>
+            <li><a class="my-account" href="" target="_blank">我的账户</a></li>
+            <li class="on">
+                <a href="">模拟炒股</a>
+                <div class="sim-list">
+                    <span><a href="">我的自选股</a></span>
+                    <span><a href="">我的策略</a></span>
+                    <span><a href="">我的钱包</a></span>
+                    <span><a href="">充值</a></span>
+                </div>
+            </li>
+            <li class="apps">
+                <a href="#">APP下载
+                    <div class="tip-wrap">
+                        <i></i>
+                        <em></em>
+                        <div class="qrcode">
+                            <img src="../static/images/index/erweim.png">
+                            <p>扫描二维码下载</p>
+                            <span>掌中股APP</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="wechat">
+                <a href="#">官方微信
+                    <div class="tip-wrap">
+                        <i></i>
+                        <em></em>
+                        <div class="qrcode">
+                            <img src="../static/images/index/weix.png">
+                            <p>关注官方微信号</p>
+                            <span>查询最新活动</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </div>
+    </div>
+    <!--    2.banner图-->
+    <div id="banner">
+        <a>
+            <img src="../static/images/index/index_banner1.jpg">
+        </a>
+        <!--        索引-->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--        左右箭头-->
+        <a href="javascript:void(0)"
+           class="left arrow"></a>
+        <a href="javascript:void(0)"
+           class="right arrow"></a>
+    </div>
+</div>
+</body>
+</html>
