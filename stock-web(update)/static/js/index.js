@@ -36,6 +36,7 @@ var arr = ["index_banner1.png",
         index=arr.length-1;//前翻,索引越界
     }
     var url=baseUrl + arr[index];
+    $("#banner img").attr("src",url);
     $("#banner ul>li").eq(index).css("background","#666666");
  })
  $("#banner .right").click(function(){
@@ -51,8 +52,9 @@ var arr = ["index_banner1.png",
     $("#banner ul>li").css("background","#fff");
     index = this.ind;
     var url = baseUrl +arr[index];
+    $("#banner img").attr("src",url);
     $("#banner ul>li").eq(index).css("background","#666666");
- });
+ })
 
  // Echarts图显示设置
  // 第二步: 初始化echart对象
