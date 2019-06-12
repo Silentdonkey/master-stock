@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>掌中股-做股票的掌门人</title>
+    <link rel="shortcut icon" href="../static/images/掌中股股票.jpg"
+          type="image/jpg">
+    <link rel="stylesheet" href="../static/css/index.css"
+          type="text/css">
+</head>
+<body>
+<!--外部容器-->
+<div id="box">
+    <!--    1.导航栏-->
+    <div id="nav">
+        <!--        左侧Logo链接首页-->
+        <a href="">
+            <img src="../static/images/logo.png">
+        </a>
+        <!--        右侧注册、登录...工具栏-->
+        <div class="nav-right">
+            <a class="register" href="" target="_blank">注册</a>
+            <a class="login" href="" target="_blank">登录</a>
+            <a class="my-account" href="" target="_blank">我的账户</a>
+            <div class="simulate">
+                <ul class="choose">
+                    <li class="list">
+                        <a href="">模拟炒股</a>
+                        <ol>
+                            <li><a href="">我的自选股</a></li>
+                            <li><a href="">我的策略</a></li>
+                            <li><a href="">我的钱包</a></li>
+                            <li><a href="">充值</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <a class="apps" href="">APP下载
+                <div class="qrcode">
+                    <img src="../static/images/apps.png">
+                    <p>扫描二维码下载</p>
+                    <p>仙人掌APP</p>
+                </div>
+            </a>
+            <a class="official" href="#">官方微信
+                <div class="qrcode">
+                    <img src="../static/images/official.png">
+                    <p>关注官方微信号
+                        <br>查询最新活动
+                        <br>股票最新研报
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!--    2.海报-->
+    <div id="poster">
+        <img src="../static/images/post4.png">
+    </div>
+    <!--    3.搜索栏-->
+    <div id="search">
+        <input type="text" placeholder="输入股票代码、名称、简拼或关键字"
+               name="stockCode" class="input-code">
+        <input type="submit" value="搜索" class="submit-code">
+    </div>
+    <!--    4.上证50 标题栏-->
+    <div id="pge-box">
+        <div class="stock-title">
+            <span class="stock-name">上证50_ BK0600</span>
+            <span class="stock-time">(2019-05-24 15:40:06)</span>
+            <!--            右侧链接-->
+            <a href="">行业跌幅榜</a>
+            <a href="">主力排名</a>
+        </div>
+        <div class="stock-info">
+            <div class="brief-left">
+                <!--                左侧上方数据-->
+                <div class="brief-leftT">
+                    <span>1534.60</span>
+                    <img src="../static/images/up-arrow.png">
+                </div>
+                <!--                左侧下方数据-->
+                <div class="brief-leftD">
+                    <span>1.43</span>
+                    <span>0.09%</span>
+                </div>
+            </div>
+            <div class=brief-right>
+                <!--                右侧上方数据-->
+                <ul class="brief-info">
+                    <li>今开&nbsp;&nbsp;:
+                        <span class="jkj red">1534.58</span>
+                    </li>
+                    <li>最高&nbsp;&nbsp;:
+                        <span class="zgj red">1546.89</span>
+                    </li>
+                    <li>换手&nbsp;&nbsp;:
+                        <span class="hs">0.13%</span>
+                    </li>
+                    <li>成交量&nbsp;&nbsp;:
+                        <span class="cjl">2124万</span>
+                    </li>
+                    <li>外盘&nbsp;&nbsp;:
+                        <span class="wp red">1102万</span>
+                    </li>
+                    <li>流通市值&nbsp;&nbsp;:
+                        <span class="ltsz">13.8万亿</span>
+                    </li>
+                </ul>
+                <!--                右侧下方数据-->
+                <ul class="brief-info">
+                    <li>昨收&nbsp;&nbsp;:
+                        <span class="zsj">1533.17</span>
+                    </li>
+                    <li>最低&nbsp;&nbsp;:
+                        <span class="zdj green">1531.78</span>
+                    </li>
+                    <li>量比&nbsp;&nbsp;:
+                        <span class="lb">0.76</span>
+                    </li>
+                    <li>成交额&nbsp;&nbsp;:
+                        <span class="cje">292.7亿</span>
+                    </li>
+                    <li>内盘&nbsp;&nbsp;:
+                        <span class="np green">1021万</span>
+                    </li>
+                    <li>流通股本&nbsp;&nbsp;:
+                        <span class="ltgb">1.6万亿</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--    5.股票展示区-->
+    <div id="stock-show">
+        <!--    左侧新闻区-->
+        <div class="stock-news">
+            <p>数据排行</p>
+            <!--            下拉选择框-->
+            <ul class="choose">
+                <li>
+                    <span>总市值</span>
+                    <ol>
+                        <li>总市值</li>
+                        <li>净利润</li>
+                        <li>市盈率</li>
+                        <li>每股净资产</li>
+                        <li>市净率</li>
+                        <li>毛利率</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="data-1">
+                <a href="">工商银行</a>
+                <span>2.0万亿</span>
+            </div>
+            <div class="data-2">
+                <a href="">建设银行</a>
+                <span>2.0万亿</span>
+            </div>
+            <div class="data-3">
+                <a href="">中国平安</a>
+                <span>2.0万亿</span>
+            </div>
+            <div class="data-4">
+                <a href="">农业银行</a>
+                <span>2.0万亿</span>
+            </div>
+            <div class="data-5">
+                <a href="">中国石油</a>
+                <span>2.0万亿</span>
+            </div>
+            <div class="data-6">
+                <a href="">中国银行</a>
+                <span>2.0万亿</span>
+            </div>
+        </div>
+        <!--    右侧图表展示区-->
+        <div class="chart">
+            <div class="img-container">
+                <div class="pic-price">
+                    <img src="">
+                </div>
+                <div class="pktopnav" style="*margin-bottom: 4px; *margin-top: 3px;">
+                    <div class="fl pryxz ">
+                        <span class="K-day">
+                            日K
+                        </span>
+                        <span class="K-week">
+                            周K
+                        </span>
+                        <span class="K-month">
+                            月K
+                        </span>
+                    </div>
+                </div>
+                <div class="pic-K">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

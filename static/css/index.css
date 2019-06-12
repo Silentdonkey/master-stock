@@ -1,0 +1,295 @@
+/*清除默认样式*/
+body,p,h1,h2,h3,h4,h5,h6,ul,ol{
+    margin:0;
+    padding:0;
+    /*清除项目符号*/
+    list-style:none;
+}
+/* a标签单独设置样式*/
+a{
+    color:#333;
+    text-decoration:none;
+    /*鼠标显示*/
+    cursor:pointer;
+    font-family: PingFangSC-Regular,
+    yahei, sans-serif;
+}
+    .my-account,.nav-right .simulate .list>a,
+    .apps,.official{
+    font-weight:bold;
+}
+/*外部容器*/
+#box{
+    width:1200px;
+    height:auto;
+    /*居中显示不能是text-align:center(文本模式)*/
+    margin:0 auto;
+}
+
+/*1.导航栏*/
+#nav{
+    /*内容不固定，暂用overflow*/
+    overflow:hidden;
+    margin:10px 0;
+    background:#deebf7;
+}
+/*左侧Logo链接首页*/
+#nav>a{
+    float:left;
+    width:50%;
+    /*行内元素a浮动后高度样式不完全支持!*/
+    /* height:50px; */
+}
+    /*设置图片Logo*/
+#nav>a img{
+    height:50px;
+}
+
+/*右侧 注册、登录等 工具栏*/
+#nav .nav-right{
+    float:right;
+
+}
+/*注册、登录显示*/
+.nav-right .register,.nav-right .login{
+    background:#f0624f;
+    padding:4px 7px;
+    border-radius:3px;
+}
+.nav-right .login{
+    background:#06b4e9;
+}
+.nav-right>a{
+    margin-right:20px;
+    /*高度居中*/
+    line-height:50px;
+}
+/*模拟炒股(下拉菜单栏)*/
+.nav-right .simulate{
+    /*转换为行内块元素(同行显示)*/
+    display:inline-block;
+    margin-right:20px;
+    position:relative;
+}
+
+    /*设置模拟股票 下拉菜单隐藏与显示*/
+.nav-right .simulate .choose{
+    position:relative;
+}
+.nav-right .simulate .choose ol li>a{
+    background:#fff;
+    display:block;
+    width:50px;
+    padding:0 5px;
+    line-height:28px;
+}
+.nav-right .simulate .choose>ol{
+    display:none;
+    position:absolute;
+    /*调堆叠*/
+    z-index:10;
+    background:orange;
+}
+.nav-right .simulate .choose:hover ol{
+    display:block;
+    background:#deebf7;
+}
+.nav-right .simulate .list :hover{
+    color:orange;
+}
+
+/*APP下载,官方微信 显示二维码与隐藏*/
+.nav-right .apps,.nav-right .official{
+    position:relative;
+}
+.apps .qrcode,.official .qrcode{
+    width:180px;
+    height:auto;
+    position:absolute;
+    top:36px;
+    left:0;
+    padding:14px 20px;
+    box-sizing:border-box;
+    text-align:center;
+    border:2px solid #ddd;
+    background:white;
+    display:none;
+    z-index:999;
+}
+.nav-right .apps:hover .qrcode{
+    display:block;
+}
+.nav-right .official:hover .qrcode{
+    display:block;
+}
+
+.nav-right .qrcode>img{
+    width:100%;height:auto;
+    margin-bottom:10px;
+    vertical-align:middle;
+}
+
+/*2.海报*/
+#poster>img{
+    width:1200px;
+    height:300px;
+}
+
+/*3.搜索栏*/
+#search{
+    overflow:hidden;
+}
+#search input{
+    height:24px;
+    line-height:24px;
+    box-sizing:border-box;
+    vertical-align:bottom;
+    float:left;
+}
+#search .input-code{
+    width:260px;
+    padding:0 5px;
+    border:solid 1px #4d7bbe;
+}
+#search .submit-code{
+    border:none;
+    background:#4d7bbe;
+}
+
+/*4.上证50 标题栏*/
+/*上证50标题行*/
+#pge-box{
+    margin:0 auto;
+    background:#f3f3f3;
+    height:45px;
+    line-height:45px;
+    margin:10px 5px;
+}
+.stock-name{
+    font:bold 21px Yahei;
+    cursor:default;
+}
+.stock-time{
+    font-size:14px;
+    cursor:default;
+}
+.stock-title>a{
+    float:right;
+    margin:15px 10px 0 0;
+    font-size:14px;
+    height:24px;
+    line-height:24px;
+    background:#4f78bd;
+}
+/*上证50信息行*/
+#pge-box .stock-info{
+    height:76px;
+    margin-bottom:5px;
+    /*background:pink;*/
+    overflow:hidden;
+}
+    /*左侧信息栏*/
+.stock-info .brief-left{
+    float:left;
+    width:220px;
+    color:#f00;
+    border-right:1px solid #4f78bd;
+}
+    /*左侧上方数据*/
+.brief-left .brief-leftT{
+    height:35px;
+    line-height:35px;
+    width:80%;
+    overflow:hidden;
+    font:bold 30px Yahei;
+    margin:0 auto;
+    padding-right:20px;
+    text-align:center;
+}
+    /*箭头*/
+.brief-leftT img{
+    margin-left:5px;
+}
+/*左侧下方数据*/
+.brief-left .brief-leftD{
+
+}
+.brief-leftD span{
+    margin:10px 30px;
+}
+
+/*右侧数据*/
+.stock-info .brief-right{
+    float:right;
+    width:950px;
+    height:38px;
+    line-height:38px;
+    font-size:14px;
+    /*background:#666;*/
+
+}
+.stock-info .brief-right .brief-info{
+    overflow:hidden;
+    padding-left:15px;
+    width:940px;
+    height:38px;
+}
+.stock-info .brief-right .brief-info li{
+    float:left;
+    overflow:hidden;
+    width:150px;
+}
+.red{
+    color:#f00;
+}
+.green{
+    color:#090;
+}
+
+/*5.股票展示区*/
+#stock-show{
+    margin-top:80px;
+    clear:both;
+    font-size:18px;
+    font-family:Simsun;
+}
+/*左侧新闻区*/
+#stock-show .stock-news{
+    background:#999;
+    width:180px;
+    min-height:500px;
+    float:left;
+}
+.stock-news>p{
+    font-size:24px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background:#4d7bbe;
+}
+/*下拉选择框*/
+.stock-news .choose{
+    position:relative;
+    font-weight:bold;
+}
+.choose li>ol{
+    position:absolute;
+    display:none;
+    z-index:999;
+}
+.choose>li:hover ol{
+    display:block;
+}
+
+/*右侧图表展示*/
+.stock-show .chart{
+    float:right;
+
+}
+
+
+
+
+
+
+
