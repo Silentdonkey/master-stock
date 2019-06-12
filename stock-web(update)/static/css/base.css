@@ -1,0 +1,28 @@
+/*清除默认样式*/
+*{
+    margin:0;
+    padding:0;
+    /*清除项目符号*/
+    list-style:none;
+}
+/* a标签单独设置样式*/
+a{
+    color:#333;
+    text-decoration:none;
+    /*鼠标显示*/
+    cursor:pointer;
+    font-size:16px;
+    font-family: PingFangSC-Regular,
+    yahei, sans-serif;
+}
+/* i标签设置*/
+i{
+    font-style:normal;
+}
+/*外部容器*/
+#box{
+    width:1200px;
+    height:auto;
+    /*居中显示不能是text-align:center(文本模式)*/
+    margin:0 auto;
+}

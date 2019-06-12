@@ -1,0 +1,428 @@
+/*1.导航栏*/
+#nav {
+    /*内容不固定，暂用overflow
+    overflow:hidden;*/
+    height: 65px;
+    margin: 20px 0;
+    /*background:#deebf7;*/
+}
+
+/*左侧Logo链接首页*/
+#nav > a {
+    float: left;
+    /*width:50%;*/
+    /*行内元素a浮动后高度样式不完全支持!*/
+    /* height:50px; */
+}
+
+/*设置图片Logo*/
+#nav > a img {
+    height: 65px;
+}
+
+/*右侧 注册、登录等 工具栏*/
+/*导航栏右侧a标签--加粗显示*/
+.nav-right > li > a {
+    font-weight: bold;
+}
+
+#nav .nav-right {
+    float: right;
+}
+
+.nav-right li {
+    float: left;
+    font-size: 16px;
+    width: 102px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    padding: 5px 0;
+}
+
+/*登录、注册边框设置*/
+.nav-right .register, .nav-right .login {
+    padding: 4px 7px;
+    border-radius: 3px;
+    margin-right: 43px;
+    background: #f0624f;
+    font-weight: normal;
+}
+
+.nav-right .login {
+    background: #06b4e9;
+}
+
+/*模拟炒股 下拉菜单设置*/
+.nav-right .on {
+    border: 1px solid transparent;
+    border-radius: 5px 5px 0px 0px;
+    background: url(../images/index/top.png) 88px 15px no-repeat;
+}
+
+.on .sim-list {
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 102px;
+    border: 1px solid #f0624f;
+    border-top: none;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 5px 5px;
+    display: none;
+    background: #fff;
+    z-index: 10;
+}
+
+.on .sim-list span {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    padding: 2px 0;
+    font-size: 14px;
+}
+
+.nav-right .on:hover {
+    border: 1px solid #f0624f;
+    border-bottom-color: #d2d2d2;
+    background: url(../images/index/bottom.png) 88px 15px no-repeat;
+}
+
+.nav-right .on:hover .sim-list {
+    display: block;
+}
+
+.on > div span:hover {
+    background: #e7e7e7;
+}
+
+/*二维码 下拉显示设置*/
+/*下拉箭头设置*/
+.tip-wrap {
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    text-align: center;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+    z-index: 999;
+    display: none;
+}
+
+.tip-wrap i, .tip-wrap em {
+    top: -10px;
+    border-color: transparent transparent #ccc;
+    position: absolute;
+    left: 40px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    border-style: dashed dashed solid;
+    border-width: 0 10px 10px;
+}
+
+.tip-wrap em {
+    top: -9px;
+    border-color: transparent transparent #fff;
+}
+
+/*二维码设置*/
+.tip-wrap > div {
+    padding: 15px 15px 0;
+    line-height: 1;
+}
+
+/*字体设置*/
+.tip-wrap > div p {
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+
+.tip-wrap > div span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 5px 0;
+    color: #666;
+}
+
+/*二维码隐藏与显示*/
+.apps > a:hover .tip-wrap {
+    display: block;
+}
+
+.wechat > a:hover .tip-wrap {
+    display: block;
+}
+
+/*2.banner图*/
+#banner {
+    position: relative;
+    height: 400px;
+}
+
+#banner a > img {
+    width: 1200px;
+    height: 400px;
+}
+
+/*索引设置*/
+#banner ul {
+    width: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+#banner ul > li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*第一个li设置成灰色*/
+#banner ul li:first-child {
+    background: #666666;
+}
+
+#banner ul li:last-child {
+    margin-right: 0;
+}
+
+/*左右箭头设置*/
+#banner .arrow {
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    background: rgba(0, 0, 0, .1) url(
+    "../images/index/arrow-left.png") no-repeat center;
+    top: 50%;
+    margin-top: -35px;
+    border-radius: 5px;
+    /*设置隐藏*/
+    display: none;
+}
+
+#banner .left {
+    left: 5px;
+}
+
+#banner .right {
+    right: 5px;
+    background-image: url(
+    "../images/index/arrow-right.png");
+}
+
+/*鼠标移入移出左右箭头显示*/
+#banner:hover .arrow {
+    display: block;
+}
+
+/*3.搜索栏*/
+#search {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#search input {
+    height: 24px;
+    line-height: 24px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    float: left;
+}
+
+#search .input-code {
+    width: 260px;
+    padding: 0 5px;
+    border: solid 1px #4d7bbe;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#search .submit-code {
+    width:46px;
+    border: none;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    background: #4d7bbe;
+    cursor:pointer;
+}
+
+/*4.上证50 标题栏*/
+/*上证50标题行*/
+#pge-box {
+    margin: 0 auto;
+    background: #f3f3f3;
+    height: 45px;
+    line-height: 45px;
+    margin: 10px 5px;
+}
+
+.stock-name {
+    font: bold 21px Yahei;
+    cursor: default;
+}
+
+.stock-time {
+    font-size: 14px;
+    cursor: default;
+}
+
+.stock-title > a {
+    float: right;
+    margin: 15px 10px 0 0;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    background: #4f78bd;
+}
+
+/*上证50信息行*/
+#pge-box .stock-info {
+    height: 76px;
+    margin-bottom: 5px;
+    /*background:pink;*/
+    overflow: hidden;
+}
+
+/*左侧信息栏*/
+.stock-info .brief-left {
+    float: left;
+    width: 220px;
+    color: #f00;
+    border-right: 1px solid #4f78bd;
+}
+
+/*左侧上方数据*/
+.brief-left .brief-leftT {
+    height: 35px;
+    line-height: 35px;
+    width: 80%;
+    overflow: hidden;
+    font: bold 30px Yahei;
+    margin: 0 auto;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/*箭头*/
+.brief-leftT img {
+    margin-left: 5px;
+}
+
+/*左侧下方数据*/
+.brief-left .brief-leftD {
+
+}
+
+.brief-leftD span {
+    margin: 10px 30px;
+}
+
+/*右侧数据*/
+.stock-info .brief-right {
+    float: right;
+    width: 950px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    /*background:#666;*/
+
+}
+
+.stock-info .brief-right .brief-info {
+    overflow: hidden;
+    padding-left: 15px;
+    width: 940px;
+    height: 38px;
+}
+
+.stock-info .brief-right .brief-info li {
+    float: left;
+    overflow: hidden;
+    width: 150px;
+}
+
+.red {
+    color: #f00;
+}
+
+.green {
+    color: #090;
+}
+
+/*5.股票展示区*/
+#stock-show {
+    margin-top: 80px;
+    clear: both;
+    font-size: 18px;
+    font-family: Simsun;
+}
+
+/*左侧新闻区*/
+#stock-show .stock-news {
+    background: #999;
+    width: 180px;
+    min-height: 500px;
+    float: left;
+}
+
+.stock-news > p {
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #4d7bbe;
+}
+
+/*下拉选择框*/
+.stock-news .choose {
+    font-size:16px;
+    font-weight: bold;
+    width:180px;
+    height:40px;
+    background:#f3f3f3;
+}
+.stock-news>.data{
+    padding:10px 0;
+}
+.data:hover{
+    background:#f3f3f3;
+}
+.stock-news .data>a>span{
+    font-size: 18px;
+    font-family: Simsun;
+    margin-left:10px;
+}
+/*右侧图表展示*/
+.stock-show .chart {
+    float: right;
+
+}
+/*Echart图显示区*/
+.charts-wrap .m-line{
+    height:500px;
+    width: 675px;
+    margin: 0 auto;
+}
+.commColor span{
+  float: right !important;
+}
+
+
+
+
+
+
+
+
